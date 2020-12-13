@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="typing-cont">
+        <div class="timer p-2  text-center">
+            <h1 class="display-4" id='timmer'>00</h1>
+            <p>Type the given words in <span class='text-white'>5</span>s</p>
+        </div>
+        <div class="type-head-txt">
+            <h1 class="display-4 text-center" id='randtxt'></h1>
+        </div>
+        <br>
+        <div class="type-inp">
+            <div class="alert alert-danger gameover">
+                <h6 class='text-center game-txt'>!Game Over</h6>
+            </div>
+            <input type="text"  class="inp">
+        </div>
+        <br>
+        <div class="type-score-board">
+           <div class="clear-fix score-board">
+               <div class="float-left">
+                   <h4>Speed: <span id="speed"></span></h4>
+               </div>
+               <div class="float-right">
+                   <h4>Score: <span id="ppt"></span></h4>
+               </div>
+           </div>
+        </div>
+        <br>
+        <br>
+        <div class="controls p-2">
+            <div class="clear-fix">
+                <!-- <div class="float-left">
+                    <button class="btn btn-info start">Start</button>
+                </div> -->
+                <div class="float-right">
+                    <button class="btn btn-danger btn-block reset">Reset</button>
+                </div>
+            </div>
+            <div class="inc text-white p-2">
+                <h6>Instruction</h6>
+                <p>To start a new game, tyoe in the word</p>
+            </div>
+            <br>
+            
+        </div>
+    </div>
+    <!-- overlay -->
+    <script src="app.js"></script>
+</body>
+</html>
